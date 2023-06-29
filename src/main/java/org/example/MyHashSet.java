@@ -8,6 +8,7 @@
 package org.example;
 
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
@@ -42,5 +43,17 @@ public class MyHashSet<T> {
 
     public Object[] get() {
         return hashMap.keySet().toArray();
+    }
+
+    public String toString(){
+        return hashMap.keySet().toString();
+    }
+    public T getElementByIndex(Integer index){
+        ArrayList<T> arrayList = new ArrayList<>(hashMap.keySet());
+        if (arrayList.size() > index) {
+            return arrayList.get(index);
+        } else {
+            return null;
+        }
     }
 }

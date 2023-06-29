@@ -10,10 +10,11 @@ public class Main {
         myHashSet.add(200);
         System.out.println(myHashSet.add(300));
         System.out.println(myHashSet.add(300));
-        System.out.println(Arrays.toString(myHashSet.get()));
+        System.out.println(myHashSet);
+        System.out.println(myHashSet.getElementByIndex(10));
         System.out.println(myHashSet.remove(100));
         System.out.println(myHashSet.remove(100));
-        System.out.println(Arrays.toString(myHashSet.get()));
+        System.out.println(myHashSet);
         System.out.println(myHashSet.size());
         System.out.println(myHashSet.isEmpty());
         Iterator<Integer> iterator = myHashSet.iterator();
